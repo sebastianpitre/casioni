@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enviar mensaje por WhatsApp</title>
+</head>
+<body>
+  <h1>Selecciona un mensaje para enviar por WhatsApp:</h1>
+  <button onclick="enviarMensaje('Hola, ¿cómo estás?')">Saludo</button>
+  <button onclick="enviarMensaje('Recuerda nuestra reunión de hoy a las 3 PM')">Recordatorio de reunión</button>
+  <button onclick="enviarMensaje('Feliz cumpleaños, que tengas un gran día!')">Felicitación de cumpleaños</button>
+
+  <script>
+    function enviarMensaje(mensaje) {
+      // Reemplaza "1234567890" con el número al que deseas enviar el mensaje
+      var numeroDestino = "1234567890";
+      var mensajeWhatsapp = encodeURIComponent(mensaje);
+      var url = "https://wa.me/" + numeroDestino + "?text=" + mensajeWhatsapp;
+      window.open(url);
+    }
+  </script>
+</body>
+</html>
