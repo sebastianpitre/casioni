@@ -1,24 +1,155 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Enviar mensaje por WhatsApp</title>
-</head>
-<body>
-  <h1>Selecciona un mensaje para enviar por WhatsApp:</h1>
-  <button onclick="enviarMensaje('Hola, ¿cómo estás?')">Saludo</button>
-  <button onclick="enviarMensaje('Recuerda nuestra reunión de hoy a las 3 PM')">Recordatorio de reunión</button>
-  <button onclick="enviarMensaje('Feliz cumpleaños, que tengas un gran día!')">Felicitación de cumpleaños</button>
 
-  <script>
-    function enviarMensaje(mensaje) {
-      // Reemplaza "1234567890" con el número al que deseas enviar el mensaje
-      var numeroDestino = "+573225330092";
-      var mensajeWhatsapp = encodeURIComponent(mensaje);
-      var url = "https://wa.me/" + numeroDestino + "?text=" + mensajeWhatsapp;
-      window.open(url);
-    }
-  </script>
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href=" assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href=" assets/img/favicon.png">
+  <title>
+    Roberto Cassiani - Abogado
+  </title>
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+  <!-- Nucleo Icons -->
+  <link href=" assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href=" assets/css/nucleo-svg.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/intro.css">
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <!-- CSS Files -->
+  <link id="pagestyle" href=" assets/css/material-kit.css?v=3.0.4" rel="stylesheet" />
+  <!-- Nepcha Analytics (nepcha.com) -->
+  <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
+  <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
+</head>
+
+<body class="blog-author bg-gray-200">
+
+  <!-- -------- START HEADER 4 w/ search book a ticket form ------- -->
+  <header>
+    <div id="home" class="page-header min-height-400" style="background-image: url('assets/img/fondo.jpg');" loading="lazy">
+      <span class="mask bg-gradient-dark opacity-8"></span>
+
+      <div class="col-lg-8 col-10 mb-4 mx-auto">
+        <div class="card card-profile mt-lg-4 mt-5">
+          <div class="row">
+            <div class="col-lg-4 my-auto col-md-6 col-12">
+              <div class="p-3 text-center  pe-md-0">
+                <img class="w-100 border-radius-md shadow-lg" src="assets/img/foto.jpeg" alt="image">
+              </div>
+            </div>
+            <div class="col-lg-8 col-md-6 col-12 my-auto">
+              <div class="card-body ps-lg-0">
+                <h3 class="mb-0">Roberto Cassiani</h3>
+                <h6 class="text-info">Abogado</h6>
+                <p class="mb-0">Bienvenido a mi práctica legal, donde ofrezco servicios legales personalizados y dedicados para satisfacer sus necesidades específicas. Como abogado comprometido, estoy aquí para proporcionarle asesoramiento experto y representación legal excepcional en una variedad de áreas.</p>
+              </div>
+            </div>
+          </div>
+          <div onclick="audio()">
+            <button class="btn bg-gradient-info btn-icon-only btn-rounded pt-0 btn-outline-success btn-xxl" data-bs-toggle="tooltip" data-bs-placement="left" style="position: absolute; top: 5px; right: 5px; border: 2px solid white;" aria-label="Instrucciones de uso" data-bs-original-title="Iniciar guia">
+              <i class="fas fa-play mt-2 pt-1 mx-auto" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <div id="intro1" class="container mt-4 mb-4">
+    <h3 class="mb-3">Áreas de Especialización</h3>
+    <div class="row">
+      <div class="col-lg-4 col-sm-6 mb-sm-0 mb-4">
+        <div class="info-horizontal bg-gradient-dark border-radius-xl p-4 d-block d-md-flex ">
+          <i class="material-icons text-3xl text-white">bookmarks</i>
+          <div class="description ps-0 ps-md-3">
+            <h5 class="text-white">Derecho Civil</h5>
+            <p class="text-white pe-0 pe-lg-5">Me especializo en resolver disputas civiles, desde conflictos contractuales hasta litigios de propiedad. Mi enfoque centrado en el cliente garantiza que sus intereses estén protegidos y que se busque una resolución justa y equitativa.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 px-lg-1">
+        <div class="info-horizontal border-radius-xl p-4 d-block d-md-flex ">
+          <i class="material-icons text-3xl text-gradient text-dark">bookmarks</i>
+          <div class="description ps-0 ps-md-3">
+            <h5>Derecho Penal</h5>
+            <p>Estoy comprometido a proteger sus derechos y libertades en casos penales. Desde delitos menores hasta acusaciones graves, proporciono representación legal sólida y estratégica en cada etapa del proceso.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-sm-0 mb-4">
+        <div class="info-horizontal bg-gradient-dark border-radius-xl p-4 d-block d-md-flex ">
+          <i class="material-icons text-3xl text-white">bookmarks</i>
+          <div class="description ps-0 ps-md-3">
+            <h5 class="text-white">Derecho de Familia</h5>
+            <p class="text-white pe-0 pe-lg-5">Entiendo lo delicado que pueden ser los asuntos familiares. Ya sea que esté enfrentando un divorcio, disputas de custodia o asuntos de manutención, estoy aquí para ayudarlo a navegar por estos desafíos con compasión y experiencia legal</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 px-lg-1">
+        <div class="info-horizontal border-radius-xl p-4 d-block d-md-flex ">
+          <i class="material-icons text-3xl text-gradient text-dark">bookmarks</i>
+          <div class="description ps-0 ps-md-3">
+            <h5>Derecho Laboral</h5>
+            <p>Defiendo los derechos de los empleados en casos de discriminación, acoso laboral y terminaciones injustas. También ofrezco asesoramiento a empleadores para garantizar el cumplimiento de las leyes laborales y evitar posibles litigios.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-sm-0 mb-4">
+        <div class="info-horizontal bg-gradient-dark border-radius-xl p-4 d-block d-md-flex ">
+          <i class="material-icons text-3xl text-white">bookmarks</i>
+          <div class="description ps-0 ps-md-3">
+            <h5 class="text-white">Derecho Comercial</h5>
+            <p class="text-white pe-0 pe-lg-5">Brindo una amplia gama de servicios legales para empresas, desde la formación de entidades comerciales hasta la resolución de disputas comerciales. Mi enfoque proactivo ayuda a proteger los intereses comerciales de mis clientes y a promover su éxito a largo plazo.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 px-lg-1">
+        <div class="info-horizontal border-radius-xl p-4 d-block d-md-flex ">
+          <i class="material-icons text-3xl text-gradient text-dark">bookmarks</i>
+          <div class="description ps-0 ps-md-3">
+            <h5>Derecho Inmobiliario</h5>
+            <p>Especializado en transacciones, disputas y litigios relacionados con bienes raíces. Brindo asesoramiento experto y representación legal sólida para proteger sus intereses en todas las facetas del mercado inmobiliario</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div  style="width: 100px; position: fixed; right: 25px; bottom: 10px;">
+      <button id="intro2" class="btn btn-info" onclick="solicitar()">Contactar</button>
+   </div>
+
+   <script>
+    function solicitar(){
+          Swal.fire({
+            title: 'Instrucciones',
+            html: '<div class="row justify-content-center"><div class="col-md-3 mx-2 bg-gradient-dark p-3 text-center border-radius-lg mt-3" onclick="enviarMensaje(\'Hola sr roberto cassiani, ¿cómo estás? quiero el servicio 1 por favor\')"><i class="material-icons text-gradient text-primary text-3xl mb-2">history_edu</i><h6 class="text-white">servicio 1</h6></div><div class="col-md-3 mx-2 bg-gradient-dark p-3 text-center border-radius-lg mt-3" onclick="enviarMensaje(\'Hola sr roberto cassiani, ¿cómo estás? quiero el servicio 2 por favor pero no cobre tan caro 👀😁\')"><i class="material-icons text-gradient text-primary text-3xl mb-2">history_edu</i><h6 class="text-white">servicio 2</h6></div><div class="col-md-3 mx-2 bg-gradient-dark p-3 text-center border-radius-lg mt-3" onclick="enviarMensaje(\'Hola sr roberto cassiani, ¿cómo estás? quiero el servicio mumero 3 por favor 🤞\')"><i class="material-icons text-gradient text-primary text-3xl mb-2">history_edu</i><h6 class="text-white">servicio 3</h6></div></div>',
+            })
+        }
+   </script>
+  <a href="opcion2.html">opcion 2</a> -
+  <a href="opcion3.html">opcion 3</a>
+  <!-- -------- END FOOTER 5 w/ DARK BACKGROUND ------- -->
+  <!--   Core JS Files   -->
+  <script src=" assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src=" assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+  <script src=" assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <!-- Control Center for Material UI Kit: parallax effect, scripts for the example pages etc -->
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
+  <script src=" assets/js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/4.2.2/intro.min.js"></script>
+  <script src="assets/js/instrucciones.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="assets/js/script.js"></script>
 </body>
+
 </html>
