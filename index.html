@@ -5,8 +5,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="apple-touch-icon" sizes="76x76" href=" assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href=" assets/img/favicon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/balance.svg">
+  <link rel="icon" type="image/png" href="assets/img/balance.svg">
   <title>
     Roberto Cassiani - Abogado
   </title>
@@ -30,113 +30,107 @@
 </head>
 
 <body class="blog-author bg-gray-200">
+  <style>
+    .bg-gradient-hex{
+      background: #daa520;
+      color: white
+    }
+    .bg-gradient-hex:hover {
+      background: #daa520;
+      color: white
+    }
+    .text-hex{
+      color: #daa520;
+    }
+    .avatar-full {
+      width: 160px !important;
+      height: 160px !important;
+    }
+    /* Estilos base del botón */
+    .boton {
+      
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      cursor: pointer;
+    }
 
-  <!-- -------- START HEADER 4 w/ search book a ticket form ------- -->
-  <header>
-    <div id="home" class="page-header min-height-400" style="background-image: url('assets/img/fondo.jpg');" loading="lazy">
-      <span class="mask bg-gradient-dark opacity-8"></span>
+    /* Efecto hover */
+    .boton:hover {
+      transform: scale(1.1) translateX(5px); /* Escala y mueve el botón */
+    }
+  </style>
 
-      <div class="col-lg-8 col-10 mb-4 mx-auto">
-        <div class="card card-profile mt-lg-4 mt-5">
-          <div class="row">
-            <div class="col-lg-4 my-auto col-md-6 col-12">
-              <div class="p-3 text-center  pe-md-0">
-                <img class="w-100 border-radius-md shadow-lg" src="assets/img/foto.jpeg" alt="image">
+  <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6 mb-4">
+    <section class="mt-7 position-relative">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mx-auto">
+            <div class=" text-center">
+              <img class="avatar avatar-full shadow-xl position-relative z-index-2" src="assets/img/perfil.jpeg" style="border: 5px solid #daa520;"
+                alt="bruce" loading="lazy">
+            </div>
+            <div class="row py-3">
+              <div class="col-lg-7 col-md-7 z-index-2 position-relative px-md-2 px-sm-5 mx-auto">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h3 class="mb-0">Roberto Cassiani</h3>
+                  <div class="d-block">
+                    <a href="https://www.instagram.com/roberto_cassiani?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><h6 class="mb-0 card p-2" style="border: 1px solid #daa520;">@roberto_cassiani</h6></a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-auto">
+                    <p class="h5">Abogado</p>
+                  </div>
+                  
+                </div>
+                <p class="text-lg mb-0 ">
+                  Bienvenido a mi práctica legal, donde ofrezco servicios legales personalizados y dedicados para satisfacer sus necesidades específicas. Como abogado comprometido, estoy aquí para proporcionarle asesoramiento experto y representación legal excepcional en una variedad de áreas.
+                </p>
+
+                <div class="container mt-4 mb-4">
+                  <div class="d-flex ms-n3">
+                    <i class="material-icons text-3xl text-hex">balanced</i>
+                    <h3 class=" ms-n4 mt-n1">Servicios</h3>
+                  </div>
+                  <p class="text-lg mb-3 ">Haz clic en tu caso para comunicarte conmigo.</p>
+
+                  <div class="row">
+                    
+                    <div class="col-lg-6 col-sm-12 mb-3">
+                      <div class="card boton bg-gradient-dark p-3" onclick="enviarMensaje('Hola Doctor Roberto Cassiani, ¿cómo está? Tengo un caso de asunto Civil.')" style="height: 100px;">
+                        <h5 class="text-hex text-center my-auto">Tengo un caso de asunto Civil</h5>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 col-sm-12 mb-3">
+                      <div class="card boton bg-gradient-dark p-3" onclick="enviarMensaje('Hola Doctor Roberto Cassiani, ¿cómo está? Tengo un caso de asunto laboral o pensiones.')" style="height: 100px;">
+                        <h5 class="text-hex text-center my-auto">Tengo un caso de asunto laboral o de pensiones</h5>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 col-sm-12 mb-3" >
+                      <div class="card boton bg-gradient-dark p-3" onclick="enviarMensaje('Hola Doctor roberto cassiani, ¿cómo está? Tengo un caso de asunto financiero o bancario.')" style="height: 100px;">
+                        <h5 class="text-hex text-center my-auto">Tengo un caso de asunto de familiar</h5>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 col-sm-12 mb-3" >
+                      <div class="card boton bg-gradient-dark p-3" onclick="enviarMensaje('Hola Doctor roberto cassiani, ¿cómo está? Tengo un caso de asunto financiero o bancario.')" style="height: 100px;">
+                        <h5 class="text-hex text-center my-auto">Tengo un caso de asunto financiero o bancario.</h5>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-lg-8 col-md-6 col-12 my-auto">
-              <div class="card-body ps-lg-0">
-                <h3 class="mb-0">Roberto Cassiani</h3>
-                <h6 class="text-info">Abogado</h6>
-                <p class="mb-0">Bienvenido a mi práctica legal, donde ofrezco servicios legales personalizados y dedicados para satisfacer sus necesidades específicas. Como abogado comprometido, estoy aquí para proporcionarle asesoramiento experto y representación legal excepcional en una variedad de áreas.</p>
-              </div>
-            </div>
-          </div>
-          <div onclick="audio()">
-            <button class="btn bg-gradient-info btn-icon-only btn-rounded pt-0 btn-outline-success btn-xxl" data-bs-toggle="tooltip" data-bs-placement="left" style="position: absolute; top: 5px; right: 5px; border: 2px solid white;" aria-label="Instrucciones de uso" data-bs-original-title="Iniciar guia">
-              <i class="fas fa-play mt-2 pt-1 mx-auto" aria-hidden="true"></i>
-            </button>
           </div>
         </div>
       </div>
-
-    </div>
-  </header>
-
-  <div id="intro1" class="container mt-4 mb-4">
-    <h3 class="mb-3">Áreas de Especialización</h3>
-    <div class="row">
-      <div class="col-lg-4 col-sm-6 mb-sm-0 mb-4">
-        <div class="info-horizontal bg-gradient-dark border-radius-xl p-4 d-block d-md-flex ">
-          <i class="material-icons text-3xl text-white">bookmarks</i>
-          <div class="description ps-0 ps-md-3">
-            <h5 class="text-white">Derecho Civil</h5>
-            <p class="text-white pe-0 pe-lg-5">Me especializo en resolver disputas civiles, desde conflictos contractuales hasta litigios de propiedad. Mi enfoque centrado en el cliente garantiza que sus intereses estén protegidos y que se busque una resolución justa y equitativa.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 px-lg-1">
-        <div class="info-horizontal border-radius-xl p-4 d-block d-md-flex ">
-          <i class="material-icons text-3xl text-gradient text-dark">bookmarks</i>
-          <div class="description ps-0 ps-md-3">
-            <h5>Derecho Penal</h5>
-            <p>Estoy comprometido a proteger sus derechos y libertades en casos penales. Desde delitos menores hasta acusaciones graves, proporciono representación legal sólida y estratégica en cada etapa del proceso.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 mb-sm-0 mb-4">
-        <div class="info-horizontal bg-gradient-dark border-radius-xl p-4 d-block d-md-flex ">
-          <i class="material-icons text-3xl text-white">bookmarks</i>
-          <div class="description ps-0 ps-md-3">
-            <h5 class="text-white">Derecho de Familia</h5>
-            <p class="text-white pe-0 pe-lg-5">Entiendo lo delicado que pueden ser los asuntos familiares. Ya sea que esté enfrentando un divorcio, disputas de custodia o asuntos de manutención, estoy aquí para ayudarlo a navegar por estos desafíos con compasión y experiencia legal</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 px-lg-1">
-        <div class="info-horizontal border-radius-xl p-4 d-block d-md-flex ">
-          <i class="material-icons text-3xl text-gradient text-dark">bookmarks</i>
-          <div class="description ps-0 ps-md-3">
-            <h5>Derecho Laboral</h5>
-            <p>Defiendo los derechos de los empleados en casos de discriminación, acoso laboral y terminaciones injustas. También ofrezco asesoramiento a empleadores para garantizar el cumplimiento de las leyes laborales y evitar posibles litigios.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 mb-sm-0 mb-4">
-        <div class="info-horizontal bg-gradient-dark border-radius-xl p-4 d-block d-md-flex ">
-          <i class="material-icons text-3xl text-white">bookmarks</i>
-          <div class="description ps-0 ps-md-3">
-            <h5 class="text-white">Derecho Comercial</h5>
-            <p class="text-white pe-0 pe-lg-5">Brindo una amplia gama de servicios legales para empresas, desde la formación de entidades comerciales hasta la resolución de disputas comerciales. Mi enfoque proactivo ayuda a proteger los intereses comerciales de mis clientes y a promover su éxito a largo plazo.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 px-lg-1">
-        <div class="info-horizontal border-radius-xl p-4 d-block d-md-flex ">
-          <i class="material-icons text-3xl text-gradient text-dark">bookmarks</i>
-          <div class="description ps-0 ps-md-3">
-            <h5>Derecho Inmobiliario</h5>
-            <p>Especializado en transacciones, disputas y litigios relacionados con bienes raíces. Brindo asesoramiento experto y representación legal sólida para proteger sus intereses en todas las facetas del mercado inmobiliario</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
+  
   </div>
-
-  <div  style="width: 100px; position: fixed; right: 25px; bottom: 10px;">
-      <button id="intro2" class="btn btn-info" onclick="solicitar()">Contactar</button>
-   </div>
-
-   <script>
-    function solicitar(){
-          Swal.fire({
-            title: 'Instrucciones',
-            html: '<div class="row justify-content-center"><div class="col-md-3 mx-2 bg-gradient-dark p-3 text-center border-radius-lg mt-3" onclick="enviarMensaje(\'Hola sr roberto cassiani, ¿cómo estás? quiero el servicio 1 por favor\')"><i class="material-icons text-gradient text-primary text-3xl mb-2">history_edu</i><h6 class="text-white">servicio 1</h6></div><div class="col-md-3 mx-2 bg-gradient-dark p-3 text-center border-radius-lg mt-3" onclick="enviarMensaje(\'Hola sr roberto cassiani, ¿cómo estás? quiero el servicio 2 por favor pero no cobre tan caro 👀😁\')"><i class="material-icons text-gradient text-primary text-3xl mb-2">history_edu</i><h6 class="text-white">servicio 2</h6></div><div class="col-md-3 mx-2 bg-gradient-dark p-3 text-center border-radius-lg mt-3" onclick="enviarMensaje(\'Hola sr roberto cassiani, ¿cómo estás? quiero el servicio mumero 3 por favor 🤞\')"><i class="material-icons text-gradient text-primary text-3xl mb-2">history_edu</i><h6 class="text-white">servicio 3</h6></div></div>',
-            })
-        }
-   </script>
-  <a href="opcion2.html">opcion 2</a> -
-  <a href="opcion3.html">opcion 3</a>
+  
   <!-- -------- END FOOTER 5 w/ DARK BACKGROUND ------- -->
   <!--   Core JS Files   -->
   <script src=" assets/js/core/popper.min.js" type="text/javascript"></script>
