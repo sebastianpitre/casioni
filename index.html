@@ -56,15 +56,19 @@
     /* Efecto hover */
     .boton:hover {
       transform: scale(1.1) translateX(5px); /* Escala y mueve el botón */
+      transform: scale(1.1) translateY(5px); /* Escala y mueve el botón */
     }
   </style>
 
-  <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6 mb-4">
-    <section class="mt-7 position-relative">
+  <div class="card card-body blur shadow-blur mx-3 mx-md-4 mb-4">
+    <section class=" position-relative">
+      <div id="home" class="page-header min-height-150" style="background-image: url('assets/img/fnd.jpg') ; background-position-y: 60%;" loading="lazy">
+      <span class="mask bg-gradient-dark opacity-8"></span>
+      </div>
       <div class="container">
         <div class="row">
           <div class="col-12 mx-auto">
-            <div class=" text-center">
+            <div class="mt-n6 text-center">
               <img class="avatar avatar-full shadow-xl position-relative z-index-2" src="assets/img/logo.jpeg" style="border: 5px solid #d4a160;"
                 alt="bruce" loading="lazy">
             </div>
@@ -95,31 +99,31 @@
                     <i class="material-icons text-3xl text-hex">balanced</i>
                     <h3 class=" ms-n4 mt-n1">Servicios</h3>
                   </div>
-                  <p class="text-lg mb-3 ">Haz clic en tu caso para comunicarte conmigo.</p>
+                  <p class="text-lg mb-3 ">Selecciona el asunto correspondiente a tu caso para comunicarte conmigo.</p>
 
                   <div class="row">
                     
                     <div class="col-lg-6 col-sm-12 mb-3">
                       <div class="card boton bg-gradient-dark p-3" onclick="enviarMensaje('Hola Doctor Roberto Cassiani, Tengo un caso de asunto Civil.')" style="height: 100px; border: 3px solid #d4a160;">
-                        <h5 class="text-hex text-center my-auto">Tengo un caso de asunto Civil</h5>
+                        <h5 class="text-hex text-center my-auto">Tengo un asunto Civil</h5>
                       </div>
                     </div>
 
                     <div class="col-lg-6 col-sm-12 mb-3">
                       <div class="card boton bg-gradient-dark p-3" onclick="enviarMensaje('Hola Doctor Roberto Cassiani, Tengo un caso de asunto laboral o pensiones.')" style="height: 100px; border: 3px solid #d4a160;">
-                        <h5 class="text-hex text-center my-auto">Tengo un caso de asunto laboral o de pensiones</h5>
+                        <h5 class="text-hex text-center my-auto">Tengo un asunto laboral o de pensiones</h5>
                       </div>
                     </div>
 
                     <div class="col-lg-6 col-sm-12 mb-3" >
                       <div class="card boton bg-gradient-dark p-3" onclick="enviarMensaje('Hola Doctor Roberto Cassiani, Tengo un caso de asunto de familiar.')" style="height: 100px; border: 3px solid #d4a160;">
-                        <h5 class="text-hex text-center my-auto">Tengo un caso de asunto de familiar</h5>
+                        <h5 class="text-hex text-center my-auto">Tengo un asunto familiar</h5>
                       </div>
                     </div>
 
                     <div class="col-lg-6 col-sm-12 mb-3" >
                       <div class="card boton bg-gradient-dark p-3" onclick="enviarMensaje('Hola Doctor Roberto Cassiani, Tengo un caso de asunto financiero o bancario.')" style="height: 100px; border: 3px solid #d4a160;">
-                        <h5 class="text-hex text-center my-auto">Tengo un caso de asunto financiero o bancario.</h5>
+                        <h5 class="text-hex text-center my-auto">Tengo un asunto financiero o bancario.</h5>
                       </div>
                     </div>
 
